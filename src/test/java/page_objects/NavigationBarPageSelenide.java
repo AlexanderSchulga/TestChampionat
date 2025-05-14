@@ -34,7 +34,7 @@ public class NavigationBarPageSelenide {
 
         rplClick.shouldBe(Condition.visible);
 
-        rplClick.click(); //Кликаем на него
+        rplClick.click();
     }
     //метод получает все строки и скролится до последней
     public void getCommandAndScrollToThePoint(){
@@ -49,9 +49,7 @@ public class NavigationBarPageSelenide {
 
 
         String lastNameClub = command.get(9).$x(NAME_CLUB).getText();
-
         nameClub.click();
-
         elevened.scrollIntoView(false);//скрол до названия
 
 

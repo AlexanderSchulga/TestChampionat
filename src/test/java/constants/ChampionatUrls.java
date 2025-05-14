@@ -4,10 +4,6 @@ public enum ChampionatUrls {
 
     BASE_URL("https://www.championat.com/");
 
-    //Что бы в Enum передавать параметры
-    //в нем нужно:
-
-    //Поле класса
     private String url;
 
     //Обязательно конструктор
@@ -15,7 +11,7 @@ public enum ChampionatUrls {
         this.url = url;
 
     }
-    //Так как private String url;--- метод url приватный
+    //Так как private String url;---  приватный
     //Надо уметь получать этот Enum
     public String getBaseUrl(){
         return url;  //метод получения базового url
